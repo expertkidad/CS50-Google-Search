@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .footer-text-color {
+            color: #70757a;
+        }
+
+        .custom-link {
+            color: #70757a;
+            text-decoration: none;
+        }
+
+        .custom-link:hover {
+            color: #5a5b5c;
+            text-decoration: underline;
+        }
+
+        #search-input:hover {
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.50);
+            -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+            transition: -webkit-box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <footer>
+        <div class="p-3" style="background-color: #f8f4f4!important; color: black;" id="footer">
+            <a href="image.html" class="custom-link">Image Search</a>
+            <a href="advanced.html" class="custom-link" style="margin-left: 1rem;">Advanced Search</a>
+        </div>
+    </footer>
+
+    <div class="container" style="width: 60%;">
+        <div style="padding-top:22%;" class="text-center" style="text-align: center;">
+            <img id="g-logo" class="mb-4"
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="Google Search">
+            <form action="https://google.com/search">
+                <input type="text" class="form-control rounded-pill"
+                    style="margin-right: auto;width:70%; display: flex; align-self: center; margin-left: auto;" name="q"
+                    id="search-input">
+                <div class="my-2">
+                    <button class="btn bg-light m-2" id="g-search" type="submit">Google Search</button>
+                    <a href="https://www.google.com/doodles" class="btn bg-light">I'm Feeling Lucky</a>
+                    <!-- <button class="btn bg-light" id="g-lucky" type="button" onclick="window.open('google.com/doodles');">I'm Feeling Lucky</button> -->
+                </div>
+                <div id="lang">
+                    Google offered in:
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCA8">हिन्दी</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBA">বাংলা</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBE">తెలుగు</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBI">मराठी</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBM">தமிழ்</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBQ">ગુજરાતી</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBU">ಕನ್ನಡ</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBY">മലയാളം</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0__e-tXihz9PRgeDegvS1xLmfKWaw%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiHkuG3hcvuAhUlhuYKHaoUBlkQ2ZgBCBc">ਪੰਜਾਬੀ</a>
+                </div>
+        </div>
+
+        </form>
+    </div>
+    </div>
+    <footer class="mt-auto">
+        <div class=" p-3" style="background-color: #f8f4f4!important; color: black;" id="footer">
+            <div class="footer-text-color">India <div style="float: right;"><strong>Made Completely By
+                        Ideamaker</strong></div>
+            </div>
+        </div>
+        <div class="border-top border-light border-2 p-3"
+            style="border-color: #dddddd!important;; background-color: #f8f4f4!important; color: black;" id="footer">
+            <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                class="custom-link">About</a>
+
+    </footer>
+
+    </div>
+</body>
+
+</html>
