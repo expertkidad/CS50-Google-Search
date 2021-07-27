@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .footer-text-color {
+            color: #70757a;
+        }
+
+        .custom-link {
+            color: #70757a;
+            text-decoration: none;
+        }
+
+        .custom-link:hover {
+            color: #5a5b5c;
+            text-decoration: underline;
+        }
+
+        #search-input:hover {
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.50);
+            -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+            transition: -webkit-box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+        }
+        #hplogo {
+            background-repeat: no-repeat;
+            background-image: url('gimg.png');
+            background-size: 272px 92px;
+            height: 92px;
+            width: 272px;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <header>
+        <div class="p-3" style="background-color: #f8f4f4!important; color: black;" id="footer">
+            <a href="index.html" class="custom-link">Google Search</a>
+            <a href="advanced.html" class="custom-link" style="margin-left: 1rem;">Advanced Search</a>
+        </div>
+    </header>
+    <div class="container" style="width: 60%;">
+        <div style="padding-top:22%;" class="text-center" style="text-align: center;">
+
+            <div class="mb-4" style="margin-left:auto; margin-right: auto;" id="hplogo">
+            </div>
+        </div>
+        <form action="https://google.com/search?tbm=isch&">
+            <input type="text" class="form-control rounded-pill"
+                style="margin-right: auto;width:70%; display: flex; align-self: center; margin-left: auto;" name="q"
+                id="search-input">
+            <input type="text" class="visually-hidden" name="tbm" value="isch">
+    </div>
+    <div class="my-2 text-center">
+        <button class="btn bg-light m-2" id="g-search" type="submit">Search Image</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    <footer class="mt-auto">
+        <div class=" p-3" style="background-color: #f8f4f4!important; color: black;" id="footer">
+            <div class="footer-text-color">India <div style="float: right;"><strong>Made Completely By
+                        Ideamaker</strong></div>
+            </div>
+        </div>
+        <div class="border-top border-light border-2 p-3"
+            style="border-color: #dddddd!important;; background-color: #f8f4f4!important; color: black;" id="footer">
+            <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                class="custom-link">About</a>
+
+    </footer>
+
+    </div>
+</body>
+
+</html>
